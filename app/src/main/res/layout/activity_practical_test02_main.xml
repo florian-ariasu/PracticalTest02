@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView android:text="Server Section" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <EditText android:id="@+id/server_port_edit_text" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Server Port" android:inputType="number"/>
+        <Button android:id="@+id/start_server_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Connect"/>
+    </LinearLayout>
+
+    <Space android:layout_height="20dp" android:layout_width="match_parent"/>
+
+    <TextView android:text="Client Section" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/client_address_edit_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Address"/>
+    <EditText android:id="@+id/client_port_edit_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Port" android:inputType="number"/>
+    <EditText android:id="@+id/city_edit_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="City"/>
+
+    <Spinner android:id="@+id/information_type_spinner" android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/information_types"/>
+
+    <Button android:id="@+id/get_weather_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Get Weather"/>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:id="@+id/result_text_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </ScrollView>
+
+</LinearLayout>
+
