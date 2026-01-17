@@ -4,11 +4,11 @@ plugins {
 
 android {
     namespace = "ro.pub.cs.systems.eim.practicaltest02"
-    compileSdk = 34 // Folosim o versiune stabila
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "ro.pub.cs.systems.eim.practicaltest02"
-        minSdk = 26 // Conform cerintei: Jelly Bean [cite: 34]
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -30,7 +30,6 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 
-    // Aceasta linie este vitala pentru a folosi HttpClient-ul vechi [cite: 53]
     useLibrary("org.apache.http.legacy")
 }
 
